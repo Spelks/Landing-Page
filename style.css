@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,8 +7,175 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
     line-height: 1.5;
     color: #333;
+}
+
+.navbar-section,
+.hero-section,
+footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+}
+
+.container {
+    max-width: 75vw;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.logo i {
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+.container ul {
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.hero-left {
+    padding-right: 2rem;
+}
+
+.hero-left > p {
+    color: #e5e7eb;
+    padding: 20px 0;
+}
+
+.hero-right > i {
+    font-size: 20rem;
+    margin: 0 3rem;
+}
+
+button,
+.call-box {
+    background-color: #3882f6;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.call-box {
+    margin: 0 6rem;
+}
+
+button {
+    padding: 5px 20px;
+    border: 1px solid #3882f6;
+    font-size: large;
+    font-weight: 600;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+}
+
+.quote p:nth-of-type(1) {
+    font-size: 36px;
+    font-style: italic;
+
+}
+
+.quote p:nth-of-type(2) {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.container > h2 {
+    font-size: 36px;
+    font-weight: 900; 
+    color: #1f2937;
+}
+
+h2 {
+    text-align: center;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 20px 0;
+}
+
+.box-container,
+.info-box {
+    width: 200px;
+    height: auto;
+}
+
+.info-box {
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 5rem;
+    color: #3882f6;
+}
+
+.navbar-section .container,
+.logo,
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-right {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.nav {
+    gap: 4rem;
+}
+
+.navbar-section .container,
+.footer-section .container {
+    padding: 10px 0;
+}
+
+.container {
+    padding: 50px 0;
+}
+
+.call-box-right button {
+    background-color: #fff;
+    color: #3882f6;
+}
+
+.call-box {
+    padding: 30px;
+    display: flex;
+}
+
+.call-box-right {
+    flex: 1 1 20%;
+    align-self: center;
+}
+
+.call-box-left {
+    flex: 1 1 80%;
+    margin-right: 10px;
 }
