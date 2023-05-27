@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /*border: 1px solid red;*/
 }
 
 body {
@@ -42,6 +43,14 @@ footer {
 ul a {
     text-decoration: none;
     color: #fff;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+}
+
+ul a:hover {
+    border: 2px solid #fff;
+    border-radius: 100px;
+    transition: 1.5s;
 }
 
 h1 {
@@ -80,6 +89,16 @@ button {
     border: 1px solid #3882f6;
     font-size: large;
     font-weight: 600;
+}
+
+.hero-left button {
+    border: 2px solid #3882f6;
+}
+
+.hero-left button:hover {
+    background-color: #fff;
+    color: #3882f6;
+    transition: 1s;
 }
 
 .quote-section {
@@ -156,6 +175,10 @@ h2 {
     padding: 10px 0;
 }
 
+.footer-section .container {
+    text-align: center;
+}
+
 .container {
     padding: 50px 0;
 }
@@ -163,16 +186,22 @@ h2 {
 .call-box-right button {
     background-color: #fff;
     color: #3882f6;
+    border: 2px solid #fff;
+}
+
+.call-box-right button:hover {
+    background-color: #3882f6;
+    color: #fff;
+    transition: 1s;
 }
 
 .call-box {
-    padding: 30px;
+    padding: 30px 80px;
     display: flex;
 }
 
 .call-box-right {
     flex: 1 1 20%;
-    align-self: center;
 }
 
 .call-box-left {
