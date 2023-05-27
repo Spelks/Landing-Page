@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 body {
@@ -32,7 +32,7 @@ footer {
 }
 
 .logo i {
-    font-size: 40px;
+    font-size: 60px;
     padding-right: 10px;
 }
 
@@ -65,12 +65,12 @@ h1 {
 
 .hero-left > p {
     color: #e5e7eb;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .hero-right > i {
     font-size: 20rem;
-    margin: 0 3rem;
+    /*margin: 0 3rem;*/
 }
 
 button,
@@ -86,13 +86,13 @@ button,
 
 button {
     padding: 5px 20px;
-    border: 1px solid #3882f6;
-    font-size: large;
+    border: 3px solid #3882f6;
+    font-size:x-large;
     font-weight: 600;
 }
 
 .hero-left button {
-    border: 2px solid #3882f6;
+    margin-top: 20px;
 }
 
 .hero-left button:hover {
@@ -170,9 +170,11 @@ h2 {
     gap: 4rem;
 }
 
-.navbar-section .container,
+.nav.container {
+    padding: 0px;
+}
 .footer-section .container {
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .footer-section .container {
@@ -186,7 +188,7 @@ h2 {
 .call-box-right button {
     background-color: #fff;
     color: #3882f6;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
 }
 
 .call-box-right button:hover {
@@ -202,6 +204,8 @@ h2 {
 
 .call-box-right {
     flex: 1 1 20%;
+    text-align: center;
+    align-self: center;
 }
 
 .call-box-left {
