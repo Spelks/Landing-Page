@@ -14,11 +14,17 @@ body {
     color: #333;
 }
 
+.nav,
+.logo {
+    margin-top: 10px;
+}
+
 .navbar-section,
 footer {
     background-color: #1f2937;
     color: #f9faf8;
 }
+
 .hero-section {
     background-image: linear-gradient(#1f2937, #57677c);
     color: #f9faf8;
