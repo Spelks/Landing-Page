@@ -146,6 +146,7 @@ h2 {
     text-align: center;
     font-size: 5rem;
     color: #3882f6;
+    background-color: rgb(226, 233, 236);
 }
 
 .navbar-section .container,
@@ -211,4 +212,53 @@ h2 {
 .call-box-left {
     flex: 1 1 80%;
     margin-right: 10px;
+}
+
+/*Following CSS didn't quite behave how I needed. Display does not accept 'transition' so it just snaps.
+Overflow hidden with 0 height > height 100% still snapped the lower container*/
+
+/* .box-container p {
+    display: none;
+}
+
+.box-container:hover p {
+    display: block;
+} */
+
+/* .box-container p {
+    height: 0;
+    overflow: hidden;
+}
+
+.box-container:hover p {
+    height: 100%;
+    transition: 1.5s;
+} */
+
+.box-container p { 
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s, visibility 1.5s;
+    color: #3882f6;
+    text-align: center;
+    font-weight: 600;
+}
+
+.box-container:hover p {
+    opacity: 1;
+    visibility: visible;
+} 
+
+.info-box:hover {
+    background-color: #fff;
+    transition: 1.5s;
+}
+
+.box-section .container {
+    padding-bottom: 0;
+}
+
+.hover {
+    font-size: 20px;
+    font-weight: 700;
 }
