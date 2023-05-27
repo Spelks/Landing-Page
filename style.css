@@ -162,6 +162,13 @@ h2 {
     font-size: 5rem;
     color: #3882f6;
     background-color: rgb(226, 233, 236);
+    box-shadow: 5px 5px 10px #6666665c;
+}
+
+.info-box,
+.call-box,
+button {
+    box-shadow: 5px 5px 10px #6666665c;
 }
 
 .info-box:hover i {
