@@ -70,6 +70,7 @@ h1 {
 
 .hero-left {
     padding-right: 2rem;
+    flex: 1 1 400px;
 }
 
 .hero-left > p {
@@ -147,6 +148,7 @@ h2 {
     justify-content: center;
     gap: 4rem;
     padding: 20px 0;
+    flex-wrap: wrap;
 }
 
 .box-container,
@@ -187,11 +189,13 @@ button {
 .hero-section .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-right {
     margin: 0 auto;
     align-self: center;
+    flex: 1 1 0;
 }
 
 .nav {
@@ -200,7 +204,9 @@ button {
 
 .nav.container {
     padding: 0px;
+    flex-wrap: wrap;
 }
+
 .footer-section .container {
     padding: 20px 0;
 }
@@ -228,17 +234,17 @@ button {
 .call-box {
     padding: 30px 80px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .call-box-right {
-    flex: 1 1 20%;
     text-align: center;
     align-self: center;
+    flex: 1 1 auto;
 }
 
 .call-box-left {
-    flex: 1 1 80%;
-    margin-right: 10px;
+    flex: 1 1 600px;
 }
 
 /*Following CSS didn't quite behave how I needed. Display does not accept 'transition' so it just snaps.
