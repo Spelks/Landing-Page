@@ -19,6 +19,14 @@ body {
     top:0;
     width:100%;
     z-index:100;
+    justify-content: center;
+}
+
+#mobileSticky {
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:100;
 }
 
 .nav,
@@ -27,6 +35,7 @@ body {
 }
 
 .navbar-section,
+.navbar-mobile,
 footer {
     background-color: #1f2937;
     color: #f9faf8;
@@ -66,6 +75,12 @@ ul a {
 
 ul a:hover {
     border: 2px solid #fff;
+    border-radius: 100px;
+    transition: 1.5s;
+}
+
+.nav-mobile a:hover {
+    border: 2px solid transparent;
     border-radius: 100px;
     transition: 1.5s;
 }
@@ -204,6 +219,7 @@ button {
     margin: 0 auto;
     align-self: center;
     flex: 1 1 0;
+    margin-top: 30px;
 }
 
 .nav {
@@ -302,4 +318,69 @@ Overflow hidden with 0 height > height 100% still snapped the lower container*/
 .hover {
     font-size: 20px;
     font-weight: 700;
+}
+
+@media screen and (min-width: 0px) and (max-width: 925px) {
+    #mobileSticky {    display: block;}
+    #menuSticky {    display: none;  }
+  }
+
+  @media screen and (min-width: 926px) and (max-width: 3000px) {
+    #mobileSticky {    display: none;  }
+    #menuSticky {    display: block;  }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 925px) {
+    .call-box {    display: none;}
+    .call-box-mobile {    display: block;  }
+  }
+
+@media screen and (min-width: 926px) and (max-width: 3000px) {
+    .call-box {    display: block;  }
+    .call-box-mobile {    display: none;  }
+
+}
+
+.call-box-mobile {
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.box-mobile-right button {
+    margin-top: 10px;
+    border: 2px solid #fff;
+}
+
+
+.nav-mobile {
+    position: relative;
+    display: inline-block;
+    font-size: xx-large;
+    list-style: none inside;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.mobile-content {
+    display: none;
+    position: absolute;
+    font-size: 1.5rem;
+    min-width: 240px;
+    background-color: #1f2937;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #6666665c;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-mobile:hover .mobile-content {
+    display: block;
 }
